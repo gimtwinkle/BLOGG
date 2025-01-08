@@ -2,11 +2,11 @@ import React from "react";
 import PostTitle from "../components/PostTitle";
 import PostContent from "../components/PostContent";
 
-export function PostDetail(){
+export const PostDetail=()=>{
     return(
         <div>
-            <PostTitle></PostTitle>
-            <PostContent></PostContent>
+            <PostTitle>asdf</PostTitle>
+            <PostContent>asdf</PostContent>
         </div>
     )
 }
