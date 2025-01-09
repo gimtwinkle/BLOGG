@@ -3,6 +3,7 @@ import { CreatePost } from './pages/CreatePost';
 import { PostDetail } from './pages/PostDetail';
 import PostList from './pages/PostList';
 import { Routes, Route } from "react-router-dom";
+import { UpdatePost } from "./pages/UpdatePost";
 
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <Routes>
         <Route path="" element={<PostList />} />
         <Route path="/CreatePost" element={<CreatePost />} />
-        <Route path="/PostDetail" element={<PostDetail />} />
-      </Routes>
+        <Route path="/PostDetail/:listId" element={<PostDetail />} />
+        <Route path="/UpdatePost" element={<UpdatePost />} />
+    </Routes>
 
   );
 }

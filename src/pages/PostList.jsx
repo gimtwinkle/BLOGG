@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import ListTitle from '../components/ListTitle'
-import ListContent from '../components/ListContent'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 import { CreatePost } from './CreatePost'
@@ -30,8 +29,7 @@ export default function PostList() {
         <>
             {getLists.map(item => (
                 <div key={item.id}>
-                    <ListTitle>{item.title}</ListTitle>
-                    <ListContent>{item.content}</ListContent>
+                    <Link to={`/PostDetail/${item.id}`} element={ListTitle}>{item.title}</Link>
                 </div>
             ))}
             <Link to='/CreatePost' element={<CreatePost />}>
