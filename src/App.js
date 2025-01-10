@@ -11,8 +11,8 @@ function App() {
     <Routes>
         <Route path="" element={<PostList />} />
         <Route path="/CreatePost" element={<CreatePost />} />
-        <Route path="/PostDetail/:listId" element={<PostDetail />} />
-        <Route path="/UpdatePost" element={<UpdatePost />} />
+        <Route path="/PostDetail/:postId" element={<PostDetail />} />
+        <Route path="/UpdatePost/:postId" element={<UpdatePost />} />
     </Routes>
 
   );
